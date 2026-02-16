@@ -1,0 +1,66 @@
+
+# =====================================================
+#  IMPORTANT: OpenAI API Quota Issue Detected
+# =====================================================
+
+Your upload and chat features are failing because:
+❌ OpenAI API quota exceeded (no credits remaining)
+
+# =====================================================
+#  HOW TO FIX THIS ISSUE
+# =====================================================
+
+OPTION 1: Add Credits to Your OpenAI Account (RECOMMENDED)
+----------------------------------------------------------
+1. Go to: https://platform.openai.com/settings/organization/billing
+2. Click "Add payment method" 
+3. Add your credit/debit card
+4. Add at least $5-$10 in credits
+5. Wait 2-3 minutes for credits to appear
+6. Refresh and try uploading again
+
+OPTION 2: Create a New OpenAI API Key
+--------------------------------------
+If your current key is exhausted:
+1. Go to: https://platform.openai.com/api-keys
+2. Create a new API key
+3. Update your .env file:
+   OPENAI_API_KEY=your_new_key_here
+4. Restart the server
+
+# =====================================================
+#  CHECK YOUR USAGE
+# =====================================================
+View your current usage at:
+https://platform.openai.com/usage
+
+# =====================================================
+#  COST ESTIMATE
+# =====================================================
+This application uses:
+- Text Embeddings (text-embedding-3-small): ~$0.02 per 1M tokens
+- GPT-4o-mini: ~$0.15 per 1M input tokens
+
+$5 is enough for:
+✓ Hundreds of PDF documents
+✓ Thousands of questions
+✓ Very affordable!
+
+# =====================================================
+#  AFTER ADDING CREDITS
+# =====================================================
+1. Wait 2-3 minutes
+2. Go to: http://localhost:8000/upload.html
+3. Upload your PDF
+4. Go to: http://localhost:8000/chat.html
+5. Ask questions!
+
+# =====================================================
+#  CURRENT STATUS
+# =====================================================
+✓ Server: Running
+✓ Frontend: Working
+✓ Backend: Working
+✗ OpenAI API: No credits (needs payment)
+
+Once you add credits, everything will work perfectly!
